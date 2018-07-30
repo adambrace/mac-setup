@@ -119,6 +119,7 @@ echo "Installing some things from the Mac App Store..."
 
 #Microsoft Remote Desktop 10 (10.2.0)
 mas install 1295203466
+# mas lucky "Remote Desktop 10"
 #end MAS Installs
 
 echo "Installing AWS CLI..."
