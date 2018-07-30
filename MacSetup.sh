@@ -120,6 +120,11 @@ echo "Installing some things from the Mac App Store..."
 #Microsoft Remote Desktop 10 (10.2.0)
 mas install 1295203466
 # mas lucky "Remote Desktop 10"
+
+#Trello
+mas install 1278508951
+
+
 #end MAS Installs
 
 echo "Installing AWS CLI..."
@@ -299,6 +304,7 @@ echo "Setting some VS-Code settings..."
 pip install cfn-lint
 
 #extensons
+#VSCODE
 #code --install-extension {extension id}
 code --install-extension ms-python.python
 code --install-extension sirtori.indenticator
@@ -313,6 +319,11 @@ code --install-extension Tyriar.sort-lines
 code --install-extension EditorConfig.EditorConfig
 
 #end vs-code config
+#chrome
+
+#end Chrome
+
+#end Extensions
 
 killall Finder
 
