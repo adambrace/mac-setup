@@ -1,2 +1,2 @@
 # mac-setup
-Setup Scripts to the ol MBP
+Setup Scripts to the MBP. 
