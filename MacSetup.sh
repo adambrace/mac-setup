@@ -47,6 +47,7 @@ brew install the_silver_searcher
 brew install gist
 brew install shellcheck
 brew install mas
+brew install pwgen
 
 #@TODO install our custom fonts and stuff
 
