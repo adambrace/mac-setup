@@ -318,6 +318,7 @@ code --install-extension redhat.vscode-yaml
 code --install-extension kddejong.vscode-cfn-lint
 code --install-extension Tyriar.sort-lines
 code --install-extension EditorConfig.EditorConfig
+code --install-extension ziyasal.vscode-open-in-github
 
 #end vs-code config
 #chrome
