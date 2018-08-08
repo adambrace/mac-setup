@@ -48,6 +48,7 @@ brew install gist
 brew install shellcheck
 brew install mas
 brew install pwgen
+brew install jq
 
 #@TODO install our custom fonts and stuff
 
@@ -319,6 +320,7 @@ code --install-extension kddejong.vscode-cfn-lint
 code --install-extension Tyriar.sort-lines
 code --install-extension EditorConfig.EditorConfig
 code --install-extension ziyasal.vscode-open-in-github
+code --install-extension danielthielking.aws-cloudformation-yaml
 
 #end vs-code config
 #chrome
