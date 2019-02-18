@@ -136,6 +136,8 @@ unzip awscli-bundle.zip
 sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 #End AWS CLI
 
+git clone https://github.com/dracula/terminal-app.git
+
 echo "Setting some Mac settings..."
 
 #"Disabling system-wide resume"
@@ -299,6 +301,11 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Don't automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
+
+#Set terminal to use Dracula
+open terminal-app/Dracula.terminal
+defaults write com.apple.terminal "Default Window Settings" "Dracula"
+
 
 echo "Setting some VS-Code settings..."
 #vs-code config
