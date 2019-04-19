@@ -328,6 +328,7 @@ code --install-extension Tyriar.sort-lines
 code --install-extension EditorConfig.EditorConfig
 code --install-extension ziyasal.vscode-open-in-github
 code --install-extension danielthielking.aws-cloudformation-yaml
+code --install-extension dsteenman.cloudformation-yaml-snippets
 
 #end vs-code config
 #chrome
