@@ -1,3 +1,7 @@
+#bash
+chsh -s /bin/bash
+
+
 echo "Creating an SSH key for you..."
 ssh-keygen -t rsa -b 8192
 
@@ -12,7 +16,7 @@ xcode-select --install
 # Install if we don't have it
 if test ! $(which brew); then
   echo "Installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Update homebrew recipes
@@ -56,7 +60,7 @@ echo "Cleaning up brew"
 brew cleanup
 
 echo "Installing homebrew cask"
-brew install caskroom/cask/brew-cask
+brew install cask
 
 
 echo "Grunting it up"
@@ -64,36 +68,36 @@ npm install -g grunt-cli
 
 # Apps
 apps=(
- alfred
+# alfred
  firefox
- private-internet-access
+ #private-internet-access
  bartender
  #harvest
- qlcolorcode  #markdown
- suspicious-package
- bettertouchtool
+ #qlcolorcode  #markdown
+ #suspicious-package
+ #bettertouchtool
  #hipchat
- qlmarkdown #markdown
- transmission
+ #qlmarkdown #markdown
+ #transmission
  iterm2
- qlstephen  #markdown
- transmit
- cleanmymac
+ #qlstephen  #markdown
+ #transmit
+ #cleanmymac
  #razer-synapse
- vagrant
+ #vagrant
  docker
- sequel-pro
- virtualbox
- google-chrome
- skype
- vlc
+ #sequel-pro
+ #virtualbox
+ #google-chrome
+ #skype
+ #vlc
  #nvalt
  sourcetree
  #zoomus
  dropbox
  #spotify
- macdown #markdown
- macvim
+ #macdown #markdown
+ #macvim
  slack
  visual-studio-code
 )
@@ -101,7 +105,7 @@ apps=(
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps with Cask..."
-brew cask install --appdir="/Applications" ${apps[@]}
+brew install --cask ${apps[@]}
 
 brew cask alfred link
 
@@ -124,16 +128,15 @@ mas install 1295203466
 # mas lucky "Remote Desktop 10"
 
 #Trello
-mas install 1278508951
+#mas install 1278508951
 
 
 #end MAS Installs
 
 echo "Installing AWS CLI..."
 #AWS CLI
-curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
-unzip awscli-bundle.zip
-sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg AWSCLIV2.pkg -target /
 #End AWS CLI
 
 git clone https://github.com/dracula/terminal-app.git
