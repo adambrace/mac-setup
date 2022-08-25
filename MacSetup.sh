@@ -28,7 +28,7 @@ brew install git
 
 echo "Git config"
 
-#git config --global user.name "adam-brace"
+#git config --global user.name "adambrace"
 #git config --global user.email <email>
 
 
@@ -107,9 +107,8 @@ apps=(
 echo "installing apps with Cask..."
 brew install --cask ${apps[@]}
 
-brew cask alfred link
+brew install --cask alfred
 
-brew cask cleanup
 brew cleanup
 
 
@@ -298,10 +297,12 @@ defaults write com.apple.terminal "Default Window Settings" "Dracula"
 echo "Setting some VS-Code settings..."
 #vs-code config
 #Extension Dependencies
-pip install cfn-lint
+pip3 install cfn-lint
 
 #extensons
 #VSCODE
+#(node:26049) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+
 #code --install-extension {extension id}
 code --install-extension ms-python.python
 code --install-extension sirtori.indenticator
